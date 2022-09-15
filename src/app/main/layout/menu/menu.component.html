@@ -19,7 +19,7 @@
     
             <ul class="list-unstyled CTAs">
                 <li>
-                    <p style="text-align:center;"><b>Hoşgeldiniz:</b></p><p style="color:white; text-align:center;">{{loginUser.name}}</p>
+                    <p style="text-align:center;"><b>Hoşgeldiniz:</b></p><p style="color:white; text-align:center;">{{loginUser.name | uppercase }}</p>
                 </li>
                 <li>
                     <a href="" class="download"  (click)="logout()">Çıkış Yap</a>
