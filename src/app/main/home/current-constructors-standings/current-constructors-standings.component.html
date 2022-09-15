@@ -1,0 +1,60 @@
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+
+<div class="constructors" style="    padding-left: 57px;">
+    <div class="driver-points bg-dark">
+        <div class="row">
+            <img class="card-img" src="https://img.redbull.com/images/c_fill,g_auto,w_2980,h_1419/q_auto:low,f_auto/redbullcom/2022/3/24/sht2js6cwesxfg8ozobs/redbull-racing-standings-hero" style="object-fit: cover;
+                object-position: 51% 30%;border-radius: 20px;"/>
+            <div class="col first-driver">
+                <div>
+                    <p><span style="font-family: 'Roboto Condensed', sans-serif;">{{firstConstructor?.Constructor?.name}}</span><br><span style="font-family: 'Fredoka One', cursive;">{{allConstructorList?.season}} Sezonu</span></p>
+                </div>
+                <div class="row" style="margin-top: 40px;margin-bottom:25px;">
+                    <div class="col" style="font-family: 'Press Start 2P', cursive;font-family: 'Rampart One', cursive;font-size:35px;color:rgb(251, 251, 251)">{{firstConstructor?.position}}</div>
+                    <div class="col" style="text-align:center;margin-right: 15px;"><span style="font-family: 'Press Start 2P', cursive;
+                        font-family: 'Rampart One', cursive;font-size:35px;color:rgb(255, 255, 255)"> {{firstConstructor?.points}} </span><span style="font-size:15px;font-family: 'Roboto Condensed', sans-serif;">PTS</span></div>
+                </div>
+                <div class="row" style="text-align:center;padding-right:65px">
+                    <div style="font-family: 'Fredoka One', cursive; font-size:25px;">{{firstConstructor?.wins}}<br>WIN</div>
+                </div>
+            </div>
+        </div>
+        <div class="results" style="font-family: 'Roboto Condensed', sans-serif;" >
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius:20px;">
+                <div class="col">{{firstConstructor?.position}}</div>
+                <div class="col-9" style=" margin-top: 5px;margin-bottom:5px;">{{firstConstructor?.Constructor?.name}}<br>{{firstConstructor?.Constructor?.nationality}}</div>
+                <div class="col">{{firstConstructor?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{secondConstructor?.position}}</div>
+                <div class="col-9">{{secondConstructor?.Constructor?.name}} <br>{{secondConstructor?.Constructor?.nationality}}</div>
+                <div class="col">{{secondConstructor?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{thirdConstructor?.position}}</div>
+                <div class="col-9">{{thirdConstructor?.Constructor?.name}} <br>{{thirdConstructor?.Constructor?.nationality}}</div>
+                <div class="col">{{thirdConstructor?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{fourthConstructor?.position}}</div>
+                <div class="col-9">{{fourthConstructor?.Constructor?.name}}<br>{{fourthConstructor?.Constructor?.nationality}}</div>
+                <div class="col">{{fourthConstructor?.points}} PTS</div>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,23 @@
+<div class="container-fuild">
+    <div class="container mt-5 main" [ngClass]="{'main-background':false}">
+    <div>
+        <mat-form-field style="width: 500px;padding-bottom: 30px;">
+            <mat-label>Üreticiler</mat-label>
+            <mat-select [(value)]="selectedValue" (valueChange)="onChangesProducer()" (selectionChange)="getCarModel()">
+                <mat-option *ngFor="let org of producer" [value]="org.value">{{org.producer}}</mat-option>
+            </mat-select>
+        </mat-form-field>   
+    </div>
+    <div [hidden]="ishidden">
+        <mat-form-field style="width: 500px;padding-bottom: 30px;">
+            <mat-label>deneme</mat-label>
+            <mat-select>
+                <mat-option value="1" >ASDFADS</mat-option>
+                <mat-option value="12">ASDFADSdsfsdf</mat-option>
+                <mat-option value="123">ASDFADsdfsS</mat-option>
+                <mat-option value="1234">sfsfsdfASDFADS</mat-option>
+            </mat-select>
+        </mat-form-field>   
+    </div>
+    </div>
+</div>

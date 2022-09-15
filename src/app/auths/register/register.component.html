@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!--Stylesheet-->
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form [formGroup]="registerForm">
+        <div class="" style="height:30px;width:30px;padding-left:3px;" >
+            <a href="auths/login" style="text-decoration: none;">
+              <div class=""> <img src="../../../assets/backward-svgrepo-com.svg" alt=""></div>
+            </a></div>
+        <h3>Kayıt ol </h3>
+        <label for="username">Adı Soyad <span style="padding-left:5px;padding-top: 5px;color:red;font-size:23px;" *ngIf="f['name'].errors && f['name'].errors['required']">*</span></label>
+        <input type="text" placeholder="Ad Soyad  " id="fullname" formControlName="name">
+
+        <label for="username">Email <span style="padding-left:5px;padding-top: 5px;color:red;font-size:23px;" *ngIf="f['email'].errors && f['email'].errors['required']">*</span></label>
+        <input type="email" placeholder="example@gmail.com" id="email" formControlName="email">
+
+        <label for="password">Parola<span style="padding-left:5px;padding-top: 5px;color:red;font-size:23px;" *ngIf="f['password'].errors && f['password'].errors['required']">*</span></label>
+        <input type="password" placeholder="Parola" id="password" formControlName="password">
+        <p style="padding-left:5px;padding-top: 5px;color:red;font-size:13px;" *ngIf="f['password'].errors && f['password'].errors['minlength']">Minimum 3 karakter olmalıdır.</p>
+        <button style="color:black;" [disabled]="registerForm.invalid" routerLink="/auths/login" (click)="createAccount()">Kayıt Ol</button>
+        
+    </form>
+</body>
+
+</html>
+{{registerForm.value|json}}

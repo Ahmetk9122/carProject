@@ -1,0 +1,87 @@
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+
+
+<div class="drivers" style="padding-left: 120px;">
+  <div class="driver-points bg-dark">
+    <div class="row">
+      <img class="card-img"
+        src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2022/1/31/pix3rtfyqq7ajpcijvxk/f1-avustralya-grand-prix-harita"
+        style="object-fit:contain;
+                object-position: 7% 30%;border-radius: 20px;" />
+      <div class="col first-driver">
+        <div>
+          <p><span style="font-family: 'Roboto Condensed', sans-serif;">{{this.lastRaceResult?.season}}</span><br><span
+              style="font-family: 'Fredoka One', cursive;">{{this.lastRaceResult?.raceName}}</span><br><span
+              style="font-family: 'Russo One', sans-serif;">{{this.lastRaceResult?.Circuit?.Location?.locality}} </span>
+            | <span style="font-family: 'Roboto Condensed', sans-serif;">
+              {{this.lastRaceResult?.Circuit?.circuitName}}</span><br></p>
+        </div>
+        <div class="row" style="margin-top: 25px;margin-bottom:25px;">
+          <div class="col"
+            style="font-family: 'Press Start 2P', cursive;font-family: 'Rampart One', cursive;font-size:35px;color:rgb(251, 251, 251)">
+            {{this.firstDriver?.Driver?.code}}</div>
+          <div class="col" style="text-align:center;margin-right: 15px;"><span style="font-family: 'Press Start 2P', cursive;
+                        font-family: 'Rampart One', cursive;font-size:35px;color:rgb(255, 255, 255)">
+              {{this.firstDriver?.points}} </span><span
+              style="font-size:15px;font-family: 'Roboto Condensed', sans-serif;">PTS</span></div>
+        </div>
+        <div class="row" style="text-align:center;padding-right:65px">
+          <div style="font-family: 'Fredoka One', cursive; font-size:20px;">{{this.firstDriver?.Constructor?.name}}<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="results" style="font-family: 'Roboto Condensed', sans-serif;">
+      <div class="row"
+        style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius:20px;">
+        <div class="col">{{firstDriver?.position}}</div>
+        <div class="col-9" style=" margin-top: 5px;margin-bottom:5px;">{{firstDriver?.Driver?.givenName}}
+          {{firstDriver?.Driver?.familyName}}<br>{{firstDriver?.Constructor?.name}}</div>
+        <div class="col">{{firstDriver?.points}} PTS</div>
+      </div>
+      <div class="row"
+        style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+        <div class="col">{{secondDriver?.position}}</div>
+        <div class="col-9">{{secondDriver?.Driver?.givenName}}
+          {{secondDriver?.Driver?.familyName}}<br>{{secondDriver?.Constructor?.name}}</div>
+        <div class="col">{{secondDriver?.points}} PTS</div>
+      </div>
+      <div class="row"
+        style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+        <div class="col">{{thirdDriver?.position}}</div>
+        <div class="col-9">{{thirdDriver?.Driver?.givenName}}
+          {{thirdDriver?.Driver?.familyName}}<br>{{thirdDriver?.Constructor?.name}}</div>
+        <div class="col">{{thirdDriver?.points}} PTS</div>
+      </div>
+      <div class="row"
+        style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+        <div class="col">{{fourthDriver?.position}}</div>
+        <div class="col-9">{{fourthDriver?.Driver?.givenName}}
+          {{fourthDriver?.Driver?.familyName}}<br>{{fourthDriver?.Constructor?.name}}</div>
+        <div class="col">{{fourthDriver?.points}} PTS</div>
+      </div>
+      <div class="row"
+        style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+        <div class="col">{{fifthDriver?.position}}</div>
+        <div class="col-9">{{fifthDriver?.Driver?.givenName}}
+          {{fifthDriver?.Driver?.familyName}}<br>{{fifthDriver?.Constructor?.name}}</div>
+        <div class="col">{{fifthDriver?.points}} PTS</div>
+      </div>
+    </div>
+  </div>
+</div>

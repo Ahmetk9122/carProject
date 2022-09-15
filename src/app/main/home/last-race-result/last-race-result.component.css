@@ -1,0 +1,20 @@
+
+  .driver-points{
+    min-height: 500px;
+    width: 500px;
+    border-radius:26px;
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-img{
+    
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.first-driver{
+    padding-top: 20px;
+}

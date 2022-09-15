@@ -1,0 +1,82 @@
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+
+<div class="drivers" style="padding-left: 120px;">
+    <div class="driver-points bg-dark">
+        <div class="row">
+            <img class="card-img" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/homepage/driver-standings-component/MAXVER01.png.transform/4col-retina/image.png" style="object-fit: cover;
+                object-position: 92% 30%;border-radius: 20px;"/>
+            <div class="col first-driver">
+                <div>
+                    <p><span style="font-family: 'Roboto Condensed', sans-serif;">{{firstDriver?.Driver?.givenName}}</span><br><span style="font-family: 'Fredoka One', cursive;">{{firstDriver?.Driver?.familyName}}</span><br><span style="font-family: 'Russo One', sans-serif;">{{firstDriver?.position}} </span> | <span style="font-family: 'Roboto Condensed', sans-serif;"> {{firstDriverConstructor}}</span><br></p>
+                </div>
+                <div class="row" style="margin-top: 25px;margin-bottom:25px;">
+                    <div class="col" style="font-family: 'Press Start 2P', cursive;font-family: 'Rampart One', cursive;font-size:35px;color:rgb(251, 251, 251)">{{firstDriver?.Driver?.permanentNumber}}</div>
+                    <div class="col" style="text-align:center;margin-right: 15px;"><span style="font-family: 'Press Start 2P', cursive;
+                        font-family: 'Rampart One', cursive;font-size:35px;color:rgb(255, 255, 255)"> {{firstDriver?.points}} </span><span style="font-size:15px;font-family: 'Roboto Condensed', sans-serif;">PTS</span></div>
+                </div>
+                <div class="row" style="text-align:center;padding-right:65px">
+                    <div style="font-family: 'Fredoka One', cursive; font-size:25px;">{{firstDriver?.wins}}<br>WIN</div>
+                </div>
+            </div>
+        </div>
+        <div class="results" style="font-family: 'Roboto Condensed', sans-serif;" >
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius:20px;">
+                <div class="col">{{firstDriver?.position}}</div>
+                <div class="col-9" style=" margin-top: 5px;margin-bottom:5px;">{{firstDriver?.Driver?.givenName}} {{firstDriver?.Driver?.familyName}}<br>{{firstDriverConstructor}}</div>
+                <div class="col">{{firstDriver?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{secondDriver?.position}}</div>
+                <div class="col-9">{{secondDriver?.Driver?.givenName}} {{secondDriver?.Driver?.familyName}}<br>{{secondDriverConstructor}}</div>
+                <div class="col">{{secondDriver?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{thirdDriver?.position}}</div>
+                <div class="col-9">{{thirdDriver?.Driver?.givenName}} {{thirdDriver?.Driver?.familyName}}<br>{{thirdDriverConstructor}}</div>
+                <div class="col">{{thirdDriver?.points}} PTS</div>
+            </div>
+            <div class="row" style="background-color:rgb(54, 53, 53);margin-left:5px;margin-right:5px;margin-bottom: 10px; display:flex;justify-content:center;align-items: center;border-radius: 20px;">
+                <div class="col">{{fourthDriver?.position}}</div>
+                <div class="col-9">{{fourthDriver?.Driver?.givenName}} {{fourthDriver?.Driver?.familyName}}<br>{{fourthDriverConstructor}}</div>
+                <div class="col">{{fourthDriver?.points}} PTS</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <table class="table table-striped">
+        <thead >
+            <tr class="bg-dark" style="text-align: center;color: wheat;">
+                <th scope="col">Pozisyon</th>
+                <th scope="col">Puan</th>
+                <th scope="col">Pilot</th>
+                <th scope="col">Kazanılan Yarış</th>
+                <th scope="col">Takım</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center;"*ngFor="let item of driversStanding">
+                <td>{{item.position}}</td>
+                <td>{{item.points}}</td>
+                <td>{{item.Driver.givenName}} {{item.Driver.familyName}}</td>
+                <td>{{item.wins}}</td>
+                <td>{{item.Constructors[0].name}}</td>
+            </tr>
+        </tbody>
+    </table>
+    -->
+</div>

@@ -1,0 +1,45 @@
+<div class="card" style="width:100%;">
+    <div class="card-body">
+        <div style="text-align:center;">
+            <h1 class="card-title">Sıralama Sonuçları</h1>
+        </div>
+            <div class="card-title" style="background-color: #7386D5;">
+                <div class="row">
+                    <div class="col" style="margin-top:10px;margin-bottom:10px;margin-left:10px">
+                        <div class="row"><span style="color:white;font-size: large;"><b>Tarih: </b>{{qualifyResult?.date|date:'EEEE, MMMM d, y'}}</span></div>
+                        
+                    </div>
+                    <div class="col"  style="margin-top:10px;margin-bottom:10px;margin-right:10px;text-align:end ;"><div class="row"><span style="color:white;font-size: large;"><b>Saat: </b>{{qualifyResult?.time }}</span></div></div>
+                </div>
+            </div>
+        <li class="list-group-item">
+            <div class="tableFixHead" style="max-height: 335px;overflow:scroll;">
+                <table class="table table-striped">
+                <thead >
+                    <tr class="bg-dark" style="text-align: center;color: wheat;">
+                        <th scope="col">Pozisyon</th>
+                        <th scope="col">Takım</th>
+                        <th scope="col">Pilot</th>
+                        <th scope="col">Q1</th>
+                        <th scope="col">Q2</th>
+                        <th scope="col">Q3</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  style="text-align: center;font-family: 'Roboto Condensed', sans-serif;"
+                        *ngFor="let item of qualifyResult?.QualifyingResults">
+                        <td>{{item.position}}</td>
+                        <td>{{item.Constructor.name}}</td>
+                        <td>{{item.Driver.code}}</td>
+                        <td>{{item.Q1}}</td>
+                        <td>{{item.Q2}}</td>
+                        <td>{{item.Q3}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </li>
+    </div>
+</div>

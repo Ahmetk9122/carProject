@@ -1,0 +1,12 @@
+.main{
+
+    background-position:  right -35px bottom 35px;
+    height: 400px;
+    border: 0px solid white;
+    width: 500px;
+    &.main-background{
+        background-image: url("../../../../assets/hands.jpeg");
+        border-radius: 125px;
+    }
+    
+}

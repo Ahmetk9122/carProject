@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav class="" id="sidebar">
+        <div class="sidebar-header" style="text-align:center;">
+            <h3><img src="../../../../assets/f1 (2).png"></h3>
+        </div>
+
+        <div style="padding-left: 10px;">
+            <ul class="list-unstyled components">
+                <p style="text-align:center;font-weight:600;" >Menü</p>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLinkActive="active" href="/pages">Anasayfa</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/pages/formula/schedule">Takvim</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/pages/formula/points">Puan Durumu</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/pages/formula/results">Yarışlar</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/pages/formula/drivers">Sürücüler</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/pages/formula/circuits">Pistler</a></li>
+                    <li class="nav-item" routerLinkActive="active"><a class="nav-link"routerLinkActive="active" routerLink="/pages/contact">İletişim</a></li> 
+            </ul>
+    
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <p style="text-align:center;"><b>Hoşgeldiniz:</b></p><p style="color:white; text-align:center;">{{loginUser.name}}</p>
+                </li>
+                <li>
+                    <a href="" class="download"  (click)="logout()">Çıkış Yap</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

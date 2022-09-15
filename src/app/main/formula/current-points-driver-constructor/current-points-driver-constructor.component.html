@@ -1,0 +1,83 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<div class="container" style="padding-top: 30px;padding-bottom: 50px;">
+    <div class="row">
+        <div class="card" style="width: 100%;">
+            <div class="card-body" style="margin-top:20px;">
+                <img class="card-img-top"
+                    src="../../../../assets/1646921560092.jpeg"
+                    style="object-fit: cover;object-position: 7% 52%;height:400px;border-radius:15px;" alt="Card image cap">
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width:100%;">
+                    <div class="card-body">
+                        <div style="text-align:center;">
+                            <h1 class="card-title"></h1>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                               <div class="card">
+                                <div class="card-header" style="text-align:center;">Pilotlar Puan Durumu</div>
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr class="bg-dark" style="text-align: center;color: wheat;">
+                                                <th scope="col">Pozisyon</th>
+                                                <th scope="col">Puan</th>
+                                                <th scope="col">Pilot</th>
+                                                <th scope="col">Kazanılan Yarış</th>
+                                                <th scope="col">Takım</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="text-align: center;font-family: 'Roboto Condensed', sans-serif;" *ngFor="let item of driversStanding">
+                                                <td>{{item.position}}</td>
+                                                <td>{{item.points}}</td>
+                                                <td>{{item.Driver.givenName}} {{item.Driver.familyName}}</td>
+                                                <td>{{item.wins}}</td>
+                                                <td>{{item.Constructors[0].name}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header" style="text-align:center;">Takımlar Puan Durumu</div>
+                                    <div class="card-body">
+                                  
+                                        <table class="table table-striped" >
+                                            <thead>
+                                                <tr class="bg-dark" style="text-align: center;color: wheat;">
+                                                    <th scope="col">Pozisyon</th>
+                                                    <th scope="col">Puan</th>
+                                                    <th scope="col">Pilot</th>
+                                                    <th scope="col">Kazanılan Yarış</th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="text-align: center;font-family: 'Roboto Condensed', sans-serif;" *ngFor="let item of allConstructorList">
+                                                    <td>{{item.position}}</td>
+                                                    <td>{{item.points}}</td>
+                                                    <td>{{item.Constructor?.name}}</td>
+                                                    <td>{{item.wins}}</td>
+                                                    
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

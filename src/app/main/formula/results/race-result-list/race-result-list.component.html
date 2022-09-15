@@ -1,0 +1,39 @@
+<div class="card-body">
+    <div class="card" style="width:100%;">
+        <div class="card-body">
+            <div style="text-align:center;">
+                <h1 class="card-title">Yarış Sonucu</h1>
+            </div>
+            <li class="list-group-item">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="bg-dark" style="text-align: center;color: wheat;">
+                            <th scope="col">Pozisyon</th>
+                            <th scope="col">Takım</th>
+                            <th scope="col">Puan</th>
+                            <th scope="col">Araç No</th>
+                            <th scope="col">Pilot</th>
+                            <th scope="col">Durum</th>
+                            <th scope="col">Süre</th>
+                            <th scope="col">Detay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="text-align: center;font-family: 'Roboto Condensed', sans-serif;"
+                            *ngFor="let item of raceResults">
+                            <td>{{item.position}}</td>
+                            <td>{{item.Constructor.name}}</td>
+                            <td>{{item.points}}</td>
+                            <td>{{item.number}}</td>
+                            <td>{{item.Driver.givenName}} {{item.Driver.familyName}}</td>
+                            <td>{{item.status}}</td>
+                            <td>{{item.Time?.time}}</td>
+                            <td><button class="btn btn-success" (click)="detail(item)">Detay</button></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </div>
+    </div>
+</div>

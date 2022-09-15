@@ -23,7 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "/Users/ahmetkarabudak/Desktop/Projects/car-project/carProject/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../carProject/node_modules/font-awesome/css/font-awesome.css",
+              "/Users/ahmetkarabudak/Desktop/Projects/car-project/carProject/node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -90,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b48f0ed9-0d20-4702-aa3e-406cc0e8b9eb"
   }
 }

@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.success-panel{
+    background-color:#4AB643;
+    color:black
+  }
+  .warning-panel{
+    background-color:orange;
+    color:black
+  }
+  .danger-panel{
+    background-color:brown;
+    color:white
+  }
+  .mat-simple-snackbar-action > button { color: white }
+
+  mat-dialog-container {
+    background-color:#e0e0e0 !important;
+    padding: 0px 0px 0px 0px !important;
+    
+    
+  }
+
+  /* mat-dialog-container {
+    background-color: transparent !important;
+    padding: 0px 0px 0px 0px !important;
+    overflow: hidden !important;
+  } */
