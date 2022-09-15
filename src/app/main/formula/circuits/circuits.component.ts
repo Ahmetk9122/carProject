@@ -47,7 +47,6 @@ export class CircuitsComponent implements OnInit {
     this.circuitsService.getCircuits(this.selectedYear).subscribe((res)=>
     {
       this.circuits=res.MRData.CircuitTable.Circuits
-      console.log(this.circuits)
     })
     this.circuitshidden=true
     this.selectedYearforTable=this.selectedYear

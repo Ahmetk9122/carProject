@@ -27,7 +27,6 @@ export class CurrentDriversStandingsComponent implements OnInit {
   {
     this.driverService.getCurrentDriversStanding().subscribe((res)=>{
       this.driversStanding=res.MRData.StandingsTable.StandingsLists[0].DriverStandings
-      console.log("b",res.MRData.StandingsTable.StandingsLists[0].DriverStandings[0])
       this.firstDriver=res.MRData.StandingsTable.StandingsLists[0].DriverStandings[0]
       this.secondDriver=res.MRData.StandingsTable.StandingsLists[0].DriverStandings[1]
       this.thirdDriver=res.MRData.StandingsTable.StandingsLists[0].DriverStandings[2]
@@ -37,6 +36,5 @@ export class CurrentDriversStandingsComponent implements OnInit {
       this.thirdDriverConstructor=this.thirdDriver?.Constructors[0].name
       this.fourthDriverConstructor=this.fourthDriver?.Constructors[0].name
     })
-    console.log(this.driversStanding)
   }
 }

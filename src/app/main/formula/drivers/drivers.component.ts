@@ -33,13 +33,11 @@ export class DriversComponent implements OnInit {
   ngOnInit(): void {
     this.getYears();
     this.getRounds();
-    console.log("seçilen",this.selectedYear)
   }
   getDrivers (){
     
     this.driverService.getAllDrivers().subscribe((res)=>{
       this.drivers=res.MRData.DriverTable.Drivers
-      console.log(this.drivers)
       this.drivershidden=true;
       this.edited = false;
       this.driverbyYearsValue="F1 "
@@ -88,7 +86,6 @@ export class DriversComponent implements OnInit {
       this.driverService.getDriversByYear(this.selectedYearForRound).subscribe((res)=>
       {
         this.drivers=res.MRData.DriverTable.Drivers
-        console.log(this.drivers)
         this.drivershidden=true;
         this.edited = false;
         this.driverbyYearsValue=this.selectedYearForRound
@@ -99,7 +96,6 @@ export class DriversComponent implements OnInit {
       this.driverService.getDriversByYearAndRound(this.selectedYearForRound , this.selectedRound).subscribe((res)=>
       {
         this.drivers=res.MRData.DriverTable.Drivers
-       // console.log(this.drivers)
       })
       
     }
@@ -108,8 +104,6 @@ export class DriversComponent implements OnInit {
       this.driverService.getResultByYearAndRound(this.selectedYearForRound , this.selectedRound).subscribe((res)=>
       {
         this.raceResult=res.MRData.RaceTable.Races[0]
-
-        console.log("sonuc",this.raceResult)
       })
     }
     getResultandDriversByYearAndRound()
@@ -124,7 +118,7 @@ export class DriversComponent implements OnInit {
       this.driverbyYearsValue=this.selectedYearForRound
       if(this.selectedRound==""&&this.selectedYearForRound=="")
       {
-        debugger
+
         this.getDrivers()
       }
       else if(this.selectedYearForRound!="" && this.selectedRound=="")

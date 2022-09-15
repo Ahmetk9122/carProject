@@ -27,10 +27,9 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    //debugger
     var email:string= this.loginForm.value.email || ""
     this.loginService.getUser(email).subscribe((res)=>{
-      console.log(res)
+
       if(res.length==0){
         this.snackbar.open("Kullanıcı bulunamadı","Ok",{
           duration:5000,

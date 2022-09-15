@@ -11,11 +11,10 @@ export class NavbarComponent implements OnInit {
 
   constructor(private loginService:LoginService,private router:Router) { 
     let loginUser =localStorage.getItem('user')
-    //debugger
+
     if(loginUser != null)
     {
       this.loginService.user=JSON.parse(loginUser)
-      console.log(JSON.parse(loginUser))
     }
     else
     {
@@ -30,7 +29,9 @@ export class NavbarComponent implements OnInit {
   logout(){
     this.loginService.user=undefined;
     localStorage.removeItem('user')
-    console.log(localStorage.getItem('user'))
     this.router.navigateByUrl("/auths/login")
   }
 }
+
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"

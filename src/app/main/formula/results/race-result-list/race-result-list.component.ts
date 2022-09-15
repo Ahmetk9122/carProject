@@ -18,12 +18,11 @@ export class RaceResultListComponent implements OnInit {
    }
  
   ngOnInit(): void {
-    console.log("comp",this.raceResults)
   }
 
   detail(raceResult:Result)
   {
-    debugger
+
     var options = new MatDialogConfig()
     options.width="80%",
     options.height="80%",

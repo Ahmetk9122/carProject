@@ -35,10 +35,7 @@ export class RegisterComponent implements OnInit {
     this.regester.fullname=loginFormEmailValue,
     this.regester.email=loginFormEmailValue,
     this.regester.password=loginFormPasswordValue,
-    console.log(this.regester)
     this.registerService.createAccount(this.registerForm.value).subscribe((res)=>{
-      //debugger
-      console.log(res)
       this.snackbar.open("Kullanıcı Başarıyla Kaydedildi.","Ok",{
         duration:5000,
         verticalPosition: 'top',

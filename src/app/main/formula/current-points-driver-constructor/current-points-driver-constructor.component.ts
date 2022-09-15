@@ -29,7 +29,6 @@ export class CurrentPointsDriverConstructorComponent implements OnInit {
   getCurrentConstructor(){
     this.constructorService.getCurrentConstructor().subscribe((res)=>
     { 
-      console.log("takımlar",res.MRData.StandingsTable.StandingsLists[0].ConstructorStandings)
       this.allConstructorList=res.MRData.StandingsTable.StandingsLists[0].ConstructorStandings
     })
   }

@@ -17,19 +17,14 @@ export class CarListComponent implements OnInit {
   models:[]=[]
   ngOnInit(): void {
     this.getProducers()
-    console.log(this.selectedValue)
   }
 
   getProducers(){
     this.carProducerService.getProducer().subscribe((res)=>{
       this.producer =res
-      console.log(res)
-      console.log(this.producer)
     })
   }
   onChangesProducer(){
-    
-    debugger
     if(this.selectedValue=="")
     {
       this.ishidden
@@ -45,7 +40,6 @@ export class CarListComponent implements OnInit {
     {
       this.models=res
     })
-    console.log(this.models)
   }
 
 

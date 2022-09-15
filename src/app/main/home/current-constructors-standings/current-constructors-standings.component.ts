@@ -23,7 +23,6 @@ export class CurrentConstructorsStandingsComponent implements OnInit {
   getCurrentConstructor(){
     this.constructorService.getCurrentConstructor().subscribe((res)=>
     { 
-      console.log("takımlar",res.MRData.StandingsTable.StandingsLists[0])
       this.allConstructorList=res.MRData.StandingsTable.StandingsLists[0]
       this.firstConstructor=res.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[0]
       this.secondConstructor=res.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[1]

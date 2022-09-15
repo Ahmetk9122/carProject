@@ -14,7 +14,7 @@ export class RaceResultDialogComponent implements OnInit {
   position:any
   driverResult?:Result
   ngOnInit(): void {
-    debugger
+
     this.driverResult=this.data.raceResult;
   }
 
