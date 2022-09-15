@@ -32,6 +32,3 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl("/auths/login")
   }
 }
-
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
