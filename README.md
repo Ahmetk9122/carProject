@@ -1,6 +1,10 @@
 # CarProject
 
 ## Uygulama Tanıtım videosu
+
+https://www.youtube.com/watch?v=t6GGbYpSnHI&t=5s&ab_channel=AhmetKARABUDAK
+
+## LinkedIn Gönderisi
 https://www.linkedin.com/posts/ahmet-karabudak_merhabalar-haftasonlar%C4%B1-izledi%C4%9Fim-benim-i%C3%A7in-activity-6992583873788305408-g_QA?utm_source=share&utm_medium=member_desktop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
