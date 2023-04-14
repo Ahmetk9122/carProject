@@ -26,6 +26,7 @@
                                         <thead>
                                             <tr class="bg-dark" style="text-align: center;color: wheat;">
                                                 <th scope="col">Pozisyon</th>
+                                                <th scope="col">Araç</th>
                                                 <th scope="col">Puan</th>
                                                 <th scope="col">Pilot</th>
                                                 <th scope="col">Kazanılan Yarış</th>
@@ -35,6 +36,7 @@
                                         <tbody>
                                             <tr style="text-align: center;font-family: 'Roboto Condensed', sans-serif;" *ngFor="let item of driversStanding">
                                                 <td>{{item.position}}</td>
+                                                <td><div><img [src]="carImageByConstructorIdByForDriver(item)" style="width:100px;"></div></td>
                                                 <td>{{item.points}}</td>
                                                 <td>{{item.Driver.givenName}} {{item.Driver.familyName}}</td>
                                                 <td>{{item.wins}}</td>
@@ -54,8 +56,9 @@
                                             <thead>
                                                 <tr class="bg-dark" style="text-align: center;color: wheat;">
                                                     <th scope="col">Pozisyon</th>
+                                                    <th scope="col">Araç</th>
                                                     <th scope="col">Puan</th>
-                                                    <th scope="col">Pilot</th>
+                                                    <th scope="col">Takım</th>
                                                     <th scope="col">Kazanılan Yarış</th>
                                                    
                                                 </tr>
@@ -63,6 +66,7 @@
                                             <tbody>
                                                 <tr style="text-align: center;font-family: 'Roboto Condensed', sans-serif;" *ngFor="let item of allConstructorList">
                                                     <td>{{item.position}}</td>
+                                                    <td><div><img [src]="carImageByConstructorIdByForConstructor(item)" style="width:150px;"></div></td>
                                                     <td>{{item.points}}</td>
                                                     <td>{{item.Constructor?.name}}</td>
                                                     <td>{{item.wins}}</td>

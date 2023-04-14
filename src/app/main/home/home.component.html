@@ -1,43 +1,58 @@
+<div
+  class="main container-fluid"
+  style="align-items: center; padding-bottom: 50px"
+>
+  <div class="">
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-content__title" style="margin-top: 15px">
+          <span style="margin-bottom: 5px">Hızlı Güvenli</span
+          ><br /><br />Tutkulu
+        </h2>
+        <div class="hero-content__links"></div>
+      </div>
 
-<div class="main" style="padding-bottom:50px;padding-left: 20px;">
-    <div class="container">
-        <section class='hero'>
-            
-            <div class='hero-content'>
-              <h2 class='hero-content__title'><span style="margin-bottom:5px;">Hızlı Güvenli</span><br><br>Tutkulu</h2>
-              <div class='hero-content__links'>
-              </div>
-            </div>
-        
-            <div class='hero-box-container'>
-              <a href='http://localhost:4200/pages/formula/schedule' class='hero-box'>
-                <span class='hero-box__circle hero-box__circle--blue'></span>
-                <h2 class='hero-box__title'>{{userCounter}}'den Fazla Kullanıcı</h2>
-                <p class='hero-box__body'>Puan durumunu görmek için<br> tıklayınız</p>
-              </a>
-              <a href='http://localhost:4200/pages/formula/results' class='hero-box'>
-               <span class='hero-box__circle hero-box__circle--green'></span>
-               <h2 class='hero-box__title'>{{yearCounter}} Yıllık Sezon Verisi</h2>
-               <p class='hero-box__body'>F1 tarihindeki tüm sezon<br>yarışlarını incelemek için tıklayınız</p>
-              </a>
-              <a href='http://localhost:4200/pages/formula/drivers' class='hero-box'>
-                <span class='hero-box__circle hero-box__circle--orange'></span>
-                <h2 class='hero-box__title'>{{driverCounter}} 'den Fazla Pilot Verisi</h2>
-                <p class='hero-box__body'>F1 tarihindeki tüm pilotlar<br>hakkında detaylı bilgi için tıklayınız</p>
-              </a>
-            </div>
-          
-          </section>
-             
-    </div>
-    <div class="container">
-        <div class="result ">
-            <div class="row content">
-                <div class="col"><app-current-drivers-standings></app-current-drivers-standings>
-                    <app-last-race-result></app-last-race-result></div>
-                <div class="col" style="padding-top:250px;"><app-current-constructors-standings></app-current-constructors-standings></div>
-             </div>
+      <div class="hero-box-container">
+        <a href="http://localhost:4200/pages/formula/schedule" class="hero-box">
+          <span class="hero-box__circle hero-box__circle--blue"></span>
+          <h2 class="hero-box__title">{{ userCounter }}'den Fazla Kullanıcı</h2>
+          <p class="hero-box__body">
+            Puan durumunu görmek için<br />
+            tıklayınız
+          </p>
+        </a>
+        <a href="http://localhost:4200/pages/formula/results" class="hero-box">
+          <span class="hero-box__circle hero-box__circle--green"></span>
+          <h2 class="hero-box__title">{{ yearCounter }} Yıllık Sezon Verisi</h2>
+          <p class="hero-box__body">
+            F1 tarihindeki tüm sezon<br />yarışlarını incelemek için tıklayınız
+          </p>
+        </a>
+        <a href="http://localhost:4200/pages/formula/drivers" class="hero-box">
+          <span class="hero-box__circle hero-box__circle--orange"></span>
+          <h2 class="hero-box__title">
+            {{ driverCounter }} 'den Fazla Pilot Verisi
+          </h2>
+          <p class="hero-box__body">
+            F1 tarihindeki tüm pilotlar<br />hakkında detaylı bilgi için
+            tıklayınız
+          </p>
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="container-fluid">
+    <div class="result">
+      <div class="row content">
+        <div class="col">
+          <app-current-drivers-standings></app-current-drivers-standings>
+          <app-last-race-result></app-last-race-result>
         </div>
-    </div> 
-    
+        <div class="col" style="padding-top: 250px">
+          <app-current-constructors-standings></app-current-constructors-standings>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<app-carousel></app-carousel>

@@ -32,4 +32,96 @@ export class CurrentPointsDriverConstructorComponent implements OnInit {
       this.allConstructorList=res.MRData.StandingsTable.StandingsLists[0].ConstructorStandings
     })
   }
+//#region carimage
+carImageByConstructorIdByForDriver(value:DriverStanding):string{
+  if(value.Constructors[0].constructorId=="red_bull")
+  {
+  return "../../../../assets/redbull.png"
+  }
+  else if(value.Constructors[0].constructorId=="ferrari")
+  {
+    return "../../../../assets/ferrari.png"
+  }
+  else if(value.Constructors[0].constructorId=="mercedes")
+  {
+    return "../../../../assets/mercedes.png"
+  }
+  else if(value.Constructors[0].constructorId=="alpine")
+  {
+    return "../../../../assets/alpine.png"
+  }
+  else if(value.Constructors[0].constructorId=="mclaren")
+  {
+    return "../../../../assets/mclaren.png"
+  }
+  else if(value.Constructors[0].constructorId=="alfa")
+  {
+    return "../../../../assets/alfaromeo.png"
+  }
+  else if(value.Constructors[0].constructorId=="alphatauri")
+  {
+    return "../../../../assets/alphatauri.png"
+  }
+  else if(value.Constructors[0].constructorId=="haas")
+  {
+    return "../../../../assets/haas.png"
+  }
+  else if(value.Constructors[0].constructorId=="williams")
+  {
+    return "../../../../assets/williams.png"
+  }
+  else if(value.Constructors[0].constructorId=="aston_martin")
+  {
+    return "../../../../assets/astonmartin.png"
+  }
+  else
+  {  return ""
+  }
+}
+carImageByConstructorIdByForConstructor(value:any):string{
+  if(value.Constructor?.constructorId=="red_bull")
+  {
+  return "../../../../assets/redbull.png"
+  }
+  else if(value.Constructor?.constructorId=="ferrari")
+  {
+    return "../../../../assets/ferrari.png"
+  }
+  else if(value.Constructor?.constructorId=="mercedes")
+  {
+    return "../../../../assets/mercedes.png"
+  }
+  else if(value.Constructor?.constructorId=="alpine")
+  {
+    return "../../../../assets/alpine.png"
+  }
+  else if(value.Constructor?.constructorId=="mclaren")
+  {
+    return "../../../../assets/mclaren.png"
+  }
+  else if(value.Constructor?.constructorId=="alfa")
+  {
+    return "../../../../assets/alfaromeo.png"
+  }
+  else if(value.Constructor?.constructorId=="alphatauri")
+  {
+    return "../../../../assets/alphatauri.png"
+  }
+  else if(value.Constructor?.constructorId=="haas")
+  {
+    return "../../../../assets/haas.png"
+  }
+  else if(value.Constructor?.constructorId=="williams")
+  {
+    return "../../../../assets/williams.png"
+  }
+  else if(value.Constructor?.constructorId=="aston_martin")
+  {
+    return "../../../../assets/astonmartin.png"
+  }
+  else
+  {  return ""
+  }
+}
+//#endregion
 }

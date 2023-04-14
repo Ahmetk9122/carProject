@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
+    debugger
     var email:string= this.loginForm.value.email || ""
     this.loginService.getUser(email).subscribe((res)=>{
 

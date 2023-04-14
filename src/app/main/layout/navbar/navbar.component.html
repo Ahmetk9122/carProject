@@ -1,37 +1,81 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/pages" style="padding-left:20px;"><img src="../../../../assets/f1 (1).png"><span> F1DATA
-    </span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-   <div class="navbar-main">
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item" routerLinkActive="active" style="padding-left:50px;">
-            <a class="nav-link" href="/pages">Anasayfa <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/formula/schedule">Takvim</a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/formula/points">Puan Durumu</a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/formula/results">Yarışlar</a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/formula/drivers">Sürücüler</a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/formula/circuits">Pistler</a>
-          </li>
-          <li class="nav-item" routerLinkActive="active" style="padding-left:30px;">
-            <a class="nav-link" href="/pages/contact">İletişim</a>
-          </li>
-        </ul>
-      </div>
-      <div style="padding-left:663px;">
-          <button class="btn btn-outline-danger" (click)="logout()" >Çıkış</button>
-      </div>
-   </div>
-  </nav>
+  <a class="navbar-brand" href="/pages" style="padding-left: 20px"
+    ><img src="../../../../assets/f1 (1).png" /><span> F1DATA </span></a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-main">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNav"
+      style="padding-left: 92px"
+    >
+      <ul class="navbar-nav">
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 50px"
+        >
+          <a class="nav-link" href="/pages"
+            >Anasayfa <span class="sr-only">(current)</span></a
+          >
+        </li>
+
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/formula/schedule">Takvim</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/formula/points">Puan Durumu</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/formula/results">Yarışlar</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/formula/drivers">Sürücüler</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/formula/circuits">Pistler</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          style="padding-left: 30px"
+        >
+          <a class="nav-link" href="/pages/contact">İletişim</a>
+        </li>
+      </ul>
+    </div>
+    <div style="padding-left: 725px">
+      <button class="btn btn-outline-danger" (click)="logout()">Çıkış</button>
+    </div>
+  </div>
+</nav>

@@ -10,13 +10,16 @@ import { CarService } from 'src/app/shared/services/car/car.service';
 })
 export class CarListComponent implements OnInit {
 
-  constructor(private carProducerService:CarProducerService,private carService:CarService) { }
+  constructor(private carProducerService:CarProducerService,private carService:CarService) { 
+    this.getCarModel()
+  }
   selectedValue:any=""
   ishidden:boolean=true
   producer:CarProducer[]=[]
   models:[]=[]
   ngOnInit(): void {
     this.getProducers()
+   
   }
 
   getProducers(){
